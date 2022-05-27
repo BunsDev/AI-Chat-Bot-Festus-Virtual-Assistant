@@ -1,16 +1,15 @@
 #importing relevant libraries for the bot training
 import random
 import json
-#import numpy as np
+import numpy as np
 import pickle 
 #importing nltk library
-#import nltk
+import nltk
 from nltk.stem import WordNetLematizer
 #impoting tensorflow for the machine learning algorithms
-#import tensorflow
-#from tensorflow.keras.models import Sequential
-#from tensorflow.keras.layers import Dense,Activation,Dropout
-#from tensorflow.keras.optimizers import SGD
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense,Activation,Dropout
+from tensorflow.keras.optimizers import SGD
 
 #calling the WordNetLematizer constructor
 lematizer=WordNetLematizer()
