@@ -1,10 +1,10 @@
 #importing relevant libraries for the bot development 
 import random
 import json
-#import numpy as np
+import numpy as np
 import pickle 
 #importing nltk library
-#import nltk
+import nltk
 from nltk.stem import WordNetLematizer
 import tensorflow
 from tensorflow.keras.models import load_model
