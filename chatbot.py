@@ -57,4 +57,4 @@ def class_prediction(sentence):
         list_to_be_returned.append({'intentions':classes[r[0]], 'probability':str(r[1])})
         return list_to_be_returned
 #and its done for full testing and integration 
-#any feature for update contact +254796158635 or pull a request at festusmaithya.github.com
+#any feature for update contact +254706615325 or pull a request at https://github.com/festusmaithyakcau/AI_Chat_Bot-Festus-Virtual-Assistant
