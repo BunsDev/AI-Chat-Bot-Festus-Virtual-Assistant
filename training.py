@@ -5,14 +5,14 @@ import numpy as np
 import pickle 
 #importing nltk library
 import nltk
-from nltk.stem import WordNetLematizer
+from nltk.stem import WordNetLemmatizer
 #impoting tensorflow for the machine learning algorithms
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense,Activation,Dropout
 from tensorflow.keras.optimizers import SGD
 
-#calling the WordNetLematizer constructor
-lematizer=WordNetLematizer()
+#calling the WordNetLemmatizer constructor
+lematizer=WordNetLemmatizer()
 #loading the json file to develop our training
 intentions=json.load(open('intentions.json').read())
 
@@ -26,7 +26,7 @@ letters_to_be_ignored=['!','@','#','$','%','&','^','*','_','?','/',':',';','<','
 for intention in intentions['intentions']:
     for pattern in intention['patterns']:
         #tokenizing the list of parameters parsed to the pattern list in json file
-        word_list=nltk.wordtokenize(pattern)
+        word_list=nltk.word_tokenize(pattern)
         #instead of appending to the list to avoid duplication of data,lets extend the pattern list to a tokenized list pattern
         words.extend(word_list)
         #appending the tokenized word_list to the document list
@@ -37,14 +37,14 @@ print(document)#output of tokenized words is printed here according to the your 
 
 
 
-words = [lematizer.lematize(word) for word in words if word not in letters_to_be_ignored]
+words = [lematizer.lemmatize(word) for word in words if word not in letters_to_be_ignored]
 #removing duplicates using the sorted keyword and set constructor
 words =sorted(set(words))
 classes=sorted(set(classes))
-print(words)#prints all the lematized words
-print(classes)#prints all the lematized classes
+print(words)#prints all the lemmatized words
+print(classes)#prints all the lemmatized classes
 
-#now saving the lematized words and classes to a pickle file
+#now saving the lemmatized words and classes to a pickle file
 pickle.dump(words,open('words.pkl','wb'))#saving as words.pkl and mode is word binary mode
 pickle.dump(classes,open('classes.pkl','wb'))#saving as classes and 
 
@@ -62,7 +62,7 @@ for dock in document:
     word_bag =[]
     word_pattern=document[0]
     #lematizing the parsed word pattern
-    word_pattern=[lematizer.lematize(word.lower()) for word in word_pattern]
+    word_pattern=[lematizer.lemmatize(word.lower()) for word in word_pattern]
     #invoking the ignored letters at this point isn't bad though for me,I don't see a big deal excluding them
     
     #appending the words into the word_bag
@@ -85,8 +85,8 @@ random.shuffle(training)
 #turning the shuffled data into an array of data
 training=np.array(training)
 #splitting to x ana y values
-x_train=list(training[:0])#for the 0 dimension data
-y_train=list(training[:1])#for the 1 dimension data
+x_train=list(training[:, 0])#for the 0 dimension data
+y_train=list(training[:, 1])#for the 1 dimension data
 
 
 #BUILDING THE NEURAL NETWORK
