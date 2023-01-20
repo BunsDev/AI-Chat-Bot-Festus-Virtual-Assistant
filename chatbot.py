@@ -5,14 +5,14 @@ import numpy as np
 import pickle 
 #importing nltk library
 import nltk
-from nltk.stem import WordNetLematizer
+from nltk.stem import WordNetLemmatizer
 import tensorflow
 from tensorflow.keras.models import load_model
 
 #calling the WordNetLematizer constructor
-lematizer=WordNetLematizer()
+lematizer=WordNetLemmatizer()
 #loading the json file to develop our bot
-intentions=json.load(open('intentions.json').read())
+intentions=json.loads(open('intentions.json').read())
 
 #loading the pickle words and classes to develop our bot
 words=pickle.load(open('words.pkl','rb'))#rb is for read binary mode
@@ -25,8 +25,8 @@ model=load_model('Virtual_Festus_model.h5')
 
 #first,lets clean the data 
 def clean_data(sentences):
-    word_sentence =nltk.wordtokenize(sentences)
-    word_sentence=[lematizer.lematize(word) for word in word_sentence]
+    word_sentence =nltk.word_tokenize(sentences)
+    word_sentence=[lematizer.lemmatize(word) for word in word_sentence]
     return word_sentence
 
 
