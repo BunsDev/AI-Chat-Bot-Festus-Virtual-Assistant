@@ -1,6 +1,6 @@
 # AI_Chat_Bot-Festus-Virtual-Assistant
 
-**Instructions on common runtime errors**
+**Instructions on common runtime errors** :page_with_curl:
 
 Running the bot can be hindered by microsoft licensing whereby you will have to change the execution policy to AllSigned and later revert to RemoteSigned or according to your license reference.
 
