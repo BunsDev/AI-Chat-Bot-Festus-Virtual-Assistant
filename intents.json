@@ -1,5 +1,5 @@
 {
-    "intentions": [{
+    "intents": [{
             "tag": "greetings",
             "patterns": ["hello", "hi", "good morning", "good night", "good day", "how are you", "what's up?"],
             "response": ["hello!", "hi!", "goodbye!", "good night!", "good day!", "i'm fine"]
