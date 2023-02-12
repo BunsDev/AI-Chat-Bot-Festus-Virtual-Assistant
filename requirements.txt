@@ -1,0 +1,7 @@
+python
+
+numpy
+
+tensorflow
+
+nltk
