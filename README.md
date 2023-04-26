@@ -23,4 +23,5 @@ NB: Updates of optimizers and libraries should be conducted after every release 
 **INSTALLATION **
 
 **To install the requirements**
+
 pip install -r requirements.txt
