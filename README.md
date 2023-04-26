@@ -20,5 +20,7 @@ NB: Updates of optimizers and libraries should be conducted after every release 
 * * [chatbot.py](./chatbot.py): This file contains the final stages and scripts that model the bot from the generated pickle files and documents from the training stage.
 
 
-**INSTALLATION
+**INSTALLATION **
+
+**To install the requirements**
 pip install -r requirements.txt
