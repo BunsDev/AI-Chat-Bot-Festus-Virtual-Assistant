@@ -101,3 +101,10 @@ After installing the NLTK package, please do install the necessary datasets/mode
 If you’re unsure of which datasets/models you’ll need, you can install the “popular” subset of NLTK data, on the command line type python -m nltk.downloader popular, or in the Python interpreter import nltk; nltk.download('popular')
 
 For details, see https://www.nltk.org/data.html
+
+
+
+
+## Author :black_nib:
+
+* __Festus Maithya__ <[festusmaithyakcau](https://github.com/festusmaithyakcau)>
