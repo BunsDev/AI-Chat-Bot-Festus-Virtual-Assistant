@@ -1,4 +1,4 @@
-# AI_Chat_Bot-Festus-Virtual-Assistant
+# Artificial Neural Network CHATBOT (ANN)
 
 **Instructions on common runtime errors** :page_with_curl:
 
