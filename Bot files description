@@ -1,4 +1,0 @@
-The intentions.py file is a JSON file containing a partial number of users intentions which can be asked by the web visitor.It contains the tag of the intention,pattern and the intended response.
-The training.py file contains the loading of the JSON file to train and enhance the neural network of the machine learning model I developed though I ran into a challenge of understanding the neural network well but I managed to go through.The model
-iis able to understand the binaries (1s and 0s) in which I took a lot of time changing the words from the JSON file into binaries.Probably  I tried.
-The chatbot.py contains the chatbot model itself which is 87.97% functional but I think this is due to the inadequate data in the JSON file since I supplied a partial set of data to kick on the bigger development stage  since I had to quench my thirst for machine learning asap.
