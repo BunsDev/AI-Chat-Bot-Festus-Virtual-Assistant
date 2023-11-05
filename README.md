@@ -103,8 +103,6 @@ If you’re unsure of which datasets/models you’ll need, you can install the �
 For details, see https://www.nltk.org/data.html
 
 
-
-
 ## Author :black_nib:
 
-* __Festus Maithya__ <[festusmaithyakcau](https://github.com/festusmaithyakcau)>
+* __Festus Maithya__ [festusmaithyakcau](https://github.com/festusmaithyakcau)
